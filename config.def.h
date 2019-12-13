@@ -5,8 +5,9 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "TerminessTTF Nerd Font:style=Medium:size=14";
-static int borderpx = 0;
+// static char *font = "TerminessTTF Nerd Font:style=Medium:size=14";
+static char *font = "UbuntuMono Nerd Font Mono:style=Regular:size=14:antialias=true:autohint=true";
+static int borderpx = 8;
 
 /*
  * What program is execed by st depends of these precedence rules:

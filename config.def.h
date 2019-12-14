@@ -7,6 +7,7 @@
  */
 // static char *font = "TerminessTTF Nerd Font:style=Medium:size=14";
 static char *font = "UbuntuMono Nerd Font Mono:style=Regular:size=14:antialias=true:autohint=true";
+static char *font2[] = { };
 static int borderpx = 8;
 
 /*

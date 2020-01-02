@@ -85,35 +85,38 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.7;
+float alpha = 1.0;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 
 	/* 8 normal colors */
-	[0] = "#000000", /* black   */
-	[1] = "#ff615a", /* red     */
-	[2] = "#b1e969", /* green   */
-	[3] = "#ebd99c", /* yellow  */
-	[4] = "#5da9f6", /* blue    */
-	[5] = "#e86aff", /* magenta */
-	[6] = "#82fff7", /* cyan    */
-    [7] = "#dedacf", /* white   */
+	[0] = "#3b4252", /* black   */
+	[1] = "#bf616a", /* red     */
+	[2] = "#a3be8c", /* green   */
+	[3] = "#ebcb8b", /* yellow  */
+	[4] = "#81a1c1", /* blue    */
+	[5] = "#b48ead", /* magenta */
+	[6] = "#88c0d0", /* cyan    */
+    [7] = "#e5e9f0", /* white   */
 	
 	/* 8 bright colors */
-	[8]  = "#313131", /* black   */
-	[9]  = "#f58c80", /* red     */
-	[10] = "#ddf88f", /* green   */
-	[11] = "#eee5b2", /* yellow  */
-	[12] = "#a5c7ff", /* blue    */
-	[13] = "#ddaaff", /* magenta */
-	[14] = "#b7fff9", /* cyan    */
-	[15] = "#ffffff", /* white   */
+	[8]  = "#4c566a", /* black   */
+	[9]  = "#bf616a", /* red     */
+	[10] = "#a3be8c", /* green   */
+	[11] = "#ebcb8b", /* yellow  */
+	[12] = "#81a1c1", /* blue    */
+	[13] = "#b48ead", /* magenta */
+	[14] = "#8fbcbb", /* cyan    */
+	[15] = "#eceff4", /* white   */
+
+	[255] = 0,
 
 	/* special colors */
-	[256] = "#171717", /* background */
-	[257] = "#dedacf", /* foreground */
-	[258] = "#000000", /* str8 black */
+	[256] = "#cccccc",
+	[257] = "#555555",
+	[258] = "#2e3440", /* background */
+	[259] = "#d8dee9", /* foreground */
 };
 
 
@@ -121,10 +124,10 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 257;
+unsigned int defaultfg = 259;
 unsigned int defaultbg = 258;
-static unsigned int defaultcs = 257;
-static unsigned int defaultrcs = 256;
+static unsigned int defaultcs = 259;
+static unsigned int defaultrcs = 258;
 
 /*
  * Colors used when the specific fg == defaultfg. So in reverse mode this will
